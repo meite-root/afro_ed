@@ -1,7 +1,10 @@
 ## Random useful
 
-Create new file                                type nul > newfile.txt
+Create new file (with atom editor)             atom new newfile.txt
+We can check the currently installed
+Python libraries by running the command:       pip freeze
 
+pip freeze
 
 ## Manage.py basics
 
@@ -43,37 +46,8 @@ amaj2018
 background patterns: https://www.toptal.com/designers/subtlepatterns/page/6/
 
 
-##Tutorials
+##READ ME INFO
 
-1. ONE
-* Install the latest Python version 
-* Setup the development environment. 
-* Introduction to virtual environments
-* First Django project and initial app.
-
-2. TWO
-* Requirements for project 
-* First models
-* Database migration
-* Models API. 
-* First view 
-* First Unit tests. 
-* Django Template Engine & Static Files
-* Bootstrap 4 library added to the project.
-* Brief introduction the Django Admin interface.
-
-3.THREE
-
-* URLs
-* Reusable Templates
-* Forms 
-* More tests implemented 
-
-4. FOUR
-
-mplemented all the important auth. views: 
-*Sign up
-*Log in 
-*Log out 
-*Password reset 
-*Change password.
+The .env file is ignored in the .gitignore file, so every time we are going to deploy
+the application or run in a different machine, we will have to create a .env file and
+add the necessary configuration.
