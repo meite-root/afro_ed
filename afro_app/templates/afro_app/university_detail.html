@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<p><a class="btn btn-default" href="{% url 'afro_app_university_list' %}">University Listing</a></p>
+<table class="table">
+<tr><td>name</td><td>{{ object.name }}</td></tr>
+<tr><td>slug</td><td>{{ object.slug }}</td></tr>
+<tr><td>created</td><td>{{ object.created }}</td></tr>
+<tr><td>last_updated</td><td>{{ object.last_updated }}</td></tr>
+<tr><td>scholarship_availability</td><td>{{ object.scholarship_availability }}</td></tr>
+<tr><td>description</td><td>{{ object.description }}</td></tr>
+<tr><td>university_type</td><td>{{ object.university_type }}</td></tr>
+<tr><td>cost</td><td>{{ object.cost }}</td></tr>
+<tr><td>how_to_apply</td><td>{{ object.how_to_apply }}</td></tr>
+<tr><td>on_campus_housing</td><td>{{ object.on_campus_housing }}</td></tr>
+<tr><td>campusview</td><td>{{ object.campusview }}</td></tr>
+<tr><td>geolocation</td><td>{{ object.geolocation }}</td></tr>
+<tr><td>application_deadline</td><td>{{ object.application_deadline }}</td></tr>
+<tr><td>logo</td><td>{{ object.logo }}</td></tr>
+<tr><td>pre_univ</td><td>{{ object.pre_univ }}</td></tr>
+</table>
+<a class="btn btn-primary" href="{{object.get_update_url}}">Edit University</a>
+
+{% endblock %}

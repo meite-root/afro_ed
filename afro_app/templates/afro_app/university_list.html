@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<p><a class="btn btn-default" href="{% url 'afro_app_university_list' %}">University Listing</a></p>
+<table class="table">
+<tr>
+<td>ID</td><td>Link</td>
+    <td>name</td>
+    <td>slug</td>
+    <td>created</td>
+    <td>last_updated</td>
+    <td>scholarship_availability</td>
+    <td>description</td>
+    <td>university_type</td>
+    <td>cost</td>
+    <td>how_to_apply</td>
+    <td>on_campus_housing</td>
+    <td>campusview</td>
+    <td>geolocation</td>
+    <td>application_deadline</td>
+    <td>logo</td>
+    <td>pre_univ</td>
+</tr>
+{% for object in object_list %}
+<tr>
+    <td>{{object.pk}}</td>
+    <td><a href="{{object.get_absolute_url}}">{{object}}</a></td>
+    <td>{{ object.name }}</td>
+    <td>{{ object.slug }}</td>
+    <td>{{ object.created }}</td>
+    <td>{{ object.last_updated }}</td>
+    <td>{{ object.scholarship_availability }}</td>
+    <td>{{ object.description }}</td>
+    <td>{{ object.university_type }}</td>
+    <td>{{ object.cost }}</td>
+    <td>{{ object.how_to_apply }}</td>
+    <td>{{ object.on_campus_housing }}</td>
+    <td>{{ object.campusview }}</td>
+    <td>{{ object.geolocation }}</td>
+    <td>{{ object.application_deadline }}</td>
+    <td>{{ object.logo }}</td>
+    <td>{{ object.pre_univ }}</td>
+</tr>
+{% endfor %}
+</table><a class="btn btn-primary" href="{% url 'afro_app_university_create' %}">Create new University</a>
+{% endblock %}
