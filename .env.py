@@ -1,3 +1,1 @@
-SECRET_KEY=rqr_cjv4igscyu8&&(0ce(=sy=f2)p=f_wn&@0xsp7m$@!kp=d
-DEBUG=True
-ALLOWED_HOSTS=.localhost,127.0.0.1
+SECRET_KEY=*+t@((w_4uab)e5&lx)7c+-^u8fiwch+d=kepnsc&zl%=6=b05
