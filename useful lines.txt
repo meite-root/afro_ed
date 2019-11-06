@@ -1,6 +1,7 @@
 ## Random useful
 
 Create new file (with atom editor)             atom new newfile.txt
+
 We can check the currently installed
 Python libraries by running the command:       pip freeze
 
@@ -45,6 +46,16 @@ amaj2018
 
 background patterns: https://www.toptal.com/designers/subtlepatterns/page/6/
 
+
+## USE GIT
+
+
+
+1. Update your source code repository:
+
+git add .
+git commit -m "Add fileTOBEadded.extension file"
+git push origin master
 
 ##READ ME INFO
 
