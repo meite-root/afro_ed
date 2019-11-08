@@ -146,14 +146,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
 
-<<<<<<< Updated upstream
-STATIC_ROOT = [
-    os.path.join(BASE_DIR, 'static'),
-]
-=======
 
-
->>>>>>> Stashed changes
 
 LOGOUT_REDIRECT_URL = 'home'
 LOGIN_REDIRECT_URL = 'home'
