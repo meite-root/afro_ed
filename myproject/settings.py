@@ -14,30 +14,24 @@ import os
 from decouple import config, Csv
 import dj_database_url
 
-SECRET_KEY = config('SECRET_KEY') #To save sensitive information locally; Those should never be committed and pushed to the remote repository
 
 DEBUG = config('DEBUG', default=False, cast=bool)
-ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
-DATABASES = {
-    'default': dj_database_url.config(
-        default=config('DATABASE_URL')
-    )
-}
+
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'via9x2%27q*97%)747-+a1lw_j-xzruc)(wi3z3ea*@98ydh@%'
+# SECRET_KEY = config('SECRET_KEY')
+# ^To save sensitive information locally; SECURITY WARNING: keep the secret key used in production secret!
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+# ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 
-ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -56,6 +50,7 @@ INSTALLED_APPS = [
     'accounts',
     'boards',
     'afro_app',
+    # 'cities',
 
 ]
 
@@ -102,7 +97,12 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-
+# On server:
+# DATABASES = {
+#     'default': dj_database_url.config(
+#         default=config('DATABASE_URL')
+#     )
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
@@ -146,9 +146,14 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
 
+<<<<<<< Updated upstream
 STATIC_ROOT = [
     os.path.join(BASE_DIR, 'static'),
 ]
+=======
+
+
+>>>>>>> Stashed changes
 
 LOGOUT_REDIRECT_URL = 'home'
 LOGIN_REDIRECT_URL = 'home'
