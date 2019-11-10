@@ -34,7 +34,7 @@ class University(models.Model):
     how_to_apply = models.TextField(max_length=500)
     on_campus_housing = models.BooleanField()
     campusview = models.ImageField(upload_to="upload/images/")
-    geolocation = JSONField()
+    geolocation = models.TextField(max_length=1000) #JSONField()
     application_deadline = models.DateTimeField()
     logo = models.ImageField(upload_to="upload/images/")
     pre_univ = models.BooleanField()
@@ -162,7 +162,7 @@ class Country(models.Model):
 
     def __str__(self):
         return self.name
-        
+
     class Meta:
         ordering = ('-created',)
         verbose_name=_('Country')
