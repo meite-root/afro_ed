@@ -50,7 +50,7 @@ INSTALLED_APPS = [
     'accounts',
     'boards',
     'afro_app',
-    # 'cities',
+    'cities',
 
 ]
 
