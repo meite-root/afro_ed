@@ -39,6 +39,8 @@ class University(models.Model):
     logo = models.ImageField(upload_to="upload/images/")
     pre_univ = models.BooleanField()
 
+    def __str__(self):
+        return self.name
     # Relationship Fields
     author = models.ForeignKey(
         User,
@@ -81,6 +83,9 @@ class Scholarship(models.Model):
     description = models.TextField(max_length=1000)
     application_deadline = models.DateTimeField()
     logo = models.ImageField(upload_to="upload/images/")
+
+    def __str__(self):
+        return self.name
 
     # Relationship Fields
     author = models.ForeignKey(
@@ -126,6 +131,8 @@ class program(models.Model):
     last_updated = models.DateTimeField(auto_now=True, editable=False)
     description = models.TextField(max_length=1000)
 
+    def __str__(self):
+        return self.name
 
     class Meta:
         ordering = ('-created',)
@@ -153,7 +160,9 @@ class Country(models.Model):
     last_updated = models.DateTimeField(auto_now=True, editable=False)
     continent = models.TextField(max_length=100, choices=(("asia", "Asia"), ("africa", "Africa"), ("north America", "North America"), ("south America", "South America"), ("australia", "Australia"), ("europe", "Europe")))
 
-
+    def __str__(self):
+        return self.name
+        
     class Meta:
         ordering = ('-created',)
         verbose_name=_('Country')
