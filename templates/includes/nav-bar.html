@@ -1,31 +1,32 @@
+{% load static %}
+
 <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
   <div class="container">
     <a class="navbar-brand" href="{% url 'home' %}">AfroEd Home</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon" style= "background-image: url(https://img.icons8.com/windows/32/ffffff/globe-africa.png)"></span>
     </button>
-
-
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="{% url 'forum' %}">Forum</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="/#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="/#services">Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="/#contact">Contact</a>
-        </li>
-      </ul>
-    </div>
 
 
     <div class="collapse navbar-collapse" id="mainMenu">
       {% if user.is_authenticated %}
+
+      <!-- Homepage navigation -->
+
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="{% url 'forum' %}">Forum</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="/#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="/#services">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="/#contact">Contact</a>
+                </li>
+              </ul>
 
 <!-- Display usersname and dropdown -->
         <ul class="navbar-nav ml-auto">
@@ -42,13 +43,26 @@
           </li>
         </ul>
 
-<!-- Display Homepage navigation -->
-        <a href="/#contact" class="nav-link js-scroll-trigger" >Contact</a>
-        <a class="nav-link js-scroll-trigger" href="/#services">Services</a>
-        <a class="nav-link js-scroll-trigger" href="/#about">About</a>
-        <a class="nav-link js-scroll-trigger" href="{% url 'forum' %}">Forum</a>
 
       {% else %}
+
+
+      <!-- Homepage navigation -->
+
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="{% url 'forum' %}">Forum</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="/#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="/#services">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="/#contact">Contact</a>
+                </li>
+              </ul>
 
 <!-- Display login/signup buttons -->
         <form class="form-inline ml-auto">
@@ -56,11 +70,7 @@
           <a href="{% url 'signup' %}" class="btn btn-primary ml-2">Sign up</a>
         </form>
 
-<!-- Homepage navigation -->
-        <a href="/#contact" class="nav-link js-scroll-trigger" >Contact</a>
-        <a class="nav-link js-scroll-trigger" href="/#services">Services</a>
-        <a class="nav-link js-scroll-trigger" href="/#about">About</a>
-        <a class="nav-link js-scroll-trigger" href="{% url 'forum' %}">Forum</a>
+
 
       {% endif %}
     </div>
