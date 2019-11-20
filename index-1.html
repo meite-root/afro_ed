@@ -1,0 +1,99 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Unknown </title></head><body>
+<h1 id="get-started-with-django">GET STARTED WITH DJANGO</h1>
+<h2 id="intro">INTRO</h2>
+<p>Django is a Web framework written in Python. A Web framework is a software that supports
+the development of dynamic Web sites, applications, and services.</p>
+<p>Django is one of the most popular Web frameworks written in Python. It provides a set
+of tools and functionalities that solves many common problems associated with Web
+development, such as security features, database access, sessions, template processing,
+URL routing, internationalization, localization, and much more.</p>
+<h2 id="installation">INSTALLATION</h2>
+<h3 id="python">Python</h3>
+<p><code>python
+python --version</code></p>
+<h3 id="virtualenv">Virtualenv</h3>
+<p>Each project you develop will have its isolated environment</p>
+<h4 id="pip">PIP</h4>
+<p><a href="https://www.liquidweb.com/kb/install-pip-windows/">How to install PIP</a> </p>
+<h4 id="virtualenv_1">Virtualenv</h4>
+<p><code>python
+sudo pip3.6 install virtualenv</code></p>
+<h3 id="django">Django</h3>
+<p>From now on, everything we install, including Django itself, will be installed inside a Virtual Environment.</p>
+<h4 id="create-project-folder">Create project folder</h4>
+<p><code>bas
+mkdir shell_testProject
+cd shell_testProject</code></p>
+<h4 id="create-and-activate-virtual-environment">Create and activate virtual environment</h4>
+<p><code>python
+virtualenv venv -p python3.6
+source venv/bin/activate</code></p>
+<h4 id="install-django">Install Django</h4>
+<p><code>python
+pip install django</code></p>
+<h2 id="starting-a-new-project">STARTING A NEW PROJECT</h2>
+<p><code>pyth
+django-admin startproject testProject
+python manage.py runserver</code></p>
+<h2 id="cloning-afro_ed-repo">CLONING AFRO_ED REPO</h2>
+<p>```pyth
+git clone https://github.com/meite-root/afro_ed.git
+sudo apt install libpq-dev
+pip install -r requirements.txt</p>
+<h1 id="install-whatever-module-is-required">Install whatever module is required</h1>
+<p>python manage.py migrate
+python manage.py runserver
+```</p>
+<h1 id="pythondjango-local-codes">PYTHON/DJANGO/ LOCAL CODES</h1>
+<p>```python
+atom new newfile.txt        # Create new file (with atom editor)
+nano new newfile.txt        # Create new file (with nano editor)</p>
+<p>pip freeze                       # check the currently installed Python libraries</p>
+<p>python manage.py runserver       # Launch server
+python manage.py createsuperuser # Create super user</p>
+<p>```</p>
+<h3 id="python-shell">Python Shell</h3>
+<p>```pyt
+Open Shell                                 # python manage.py shell
+Import a class (Boards in this case)       # from boards.models import Board
+Create an object without saving            # board = Board()
+Save an object (create or update)          # board.save()
+Create and save an object in the database  # Board.objects.create(name='...', description='...')
+List all objects                           # Board.objects.all()
+Get a single object, identified by a field # Board.objects.get(id=1) 
+Close Shell                                # exit()</p>
+<p>```</p>
+<h1 id="use-git">USE GIT</h1>
+<h3 id="great-summary">Great summary</h3>
+<p><a href="https://rogerdudler.github.io/git-guide/">Git-guide</a></p>
+<h3 id="git-official-documentation">Git official documentation</h3>
+<p><a href="https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository">Documentation</a></p>
+<h3 id="quick-commands">Quick commands</h3>
+<p>```python
+git init                                # Initialize repository (once in folder)</p>
+<p>git config --global user.name "myname"  # set main user name
+git config --global user.email "myemail"# set main user email</p>
+<p>git remote add origin (https://github.com/exp/exp) # Connect to a remote repo (origin could be any name)
+git push origin master                  # Push latest (commit) to defined remote repo
+git push                                # Push latest (commit) to remote repo
+git pull                                # Pull latest (commit) to remote repo</p>
+<p>git clone (https://github.com/exp/exp)  # clone online repository
+git status                              # checks if there's sanything to commit
+git add .                               # Add any changes made to the folder
+git add (new-file)                      # Add file indicated
+git commit -m (name_of_the_new_commit)  # save a new commit/ version
+git log            (+ Q to exit)        # See commit history ( Head is the latest commit)</p>
+<p>git checkout (commitID)                 # back to commit pointed (which is ejected from the master branch for that purpose)
+git reset --hard (commitID)             # back to commit pointed ( any commit after that is deleted)
+git checkout -- .                       # revert all unstaged (uncommitted) changes and get back to last commit</p>
+<p>git branch                              # checkout which branches are here and which one you are in
+git checkout -b (New-branch-name)       # Create new branch 
+git checkout (branch-name)              # swich to other branch
+git merge (New-branch-name)             # merges to master branch
+git branch -D (branch-name)             # Deletes branch</p>
+<p>```</p>
+<h3 id="how-to-make-a-clean-pull-request-contribute-to-someones-repository">How to make a clean pull request (Contribute to someone's repository)</h3>
+<p>https://gist.github.com/MarcDiethelm/7303312
+https://kbroman.org/github_tutorial/pages/fork.html</p>
+<p>Both are complementary</p>
+</body></html>

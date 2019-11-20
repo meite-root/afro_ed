@@ -1,6 +1,6 @@
-#  GET STARTED WITH DJANGO   
+#  A. GET STARTED WITH DJANGO   
 
-##  INTRO 
+##  1.INTRO 
 
 Django is a Web framework written in Python. A Web framework is a software that supports
 the development of dynamic Web sites, applications, and services.
@@ -10,7 +10,7 @@ of tools and functionalities that solves many common problems associated with We
 development, such as security features, database access, sessions, template processing,
 URL routing, internationalization, localization, and much more.
 
-## INSTALLATION
+## 2.INSTALLATION
 
 ### Python
 
@@ -65,7 +65,7 @@ pip install django
 
 
 
-##  STARTING A NEW PROJECT
+## 3.STARTING A NEW PROJECT
 
 ```pyth
 django-admin startproject testProject
@@ -73,7 +73,7 @@ python manage.py runserver
 ```
 	
 
-## CLONING AFRO_ED REPO
+## 4.CLONING AFRO_ED REPO
 
 ```pyth
 git clone https://github.com/meite-root/afro_ed.git
@@ -86,7 +86,7 @@ python manage.py runserver
 
 
 
-# PYTHON/DJANGO/ LOCAL CODES 
+# B. PYTHON/DJANGO/ LOCAL CODES 
 
 ```python
 atom new newfile.txt        # Create new file (with atom editor)
@@ -116,7 +116,7 @@ Close Shell                                # exit()
 
 
 
-#  USE GIT 
+#  C. USE GIT 
 
 ### Great summary
 
