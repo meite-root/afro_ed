@@ -4,16 +4,18 @@ section#tophomepage {
   }
 
 
-.alrazy-title {
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 700;
-  font-size: 6vw;
-  font-size: calc( 100vw / var(--char-total) );
-  position: relative;
-  padding: 0.4em 0;
-  overflow: hidden;
-  color: white;
-}
+  .alrazy-title {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 6vw;
+    font-size: calc( 100vw / var(--char-total) );
+    position: relative;
+    padding: 0.4em 0;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+  }
+
 .alrazy-title:after {
   content: '';
   display: block;
@@ -27,6 +29,8 @@ section#tophomepage {
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
+
+
 @-webkit-keyframes underline {
   from {
     -webkit-transform: scaleX(0);
@@ -62,4 +66,69 @@ section#tophomepage {
 }
 .splitting-mark {
   color: white;
+}
+
+
+/* For subtitle */
+
+.alrazy-subtitle {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 6vw;
+  font-size: calc( 100vw / var(--char-total) );
+  position: relative;
+  padding: 0.4em 0;
+  overflow: hidden;
+  color: white;
+  text-align: center;
+}
+
+.alrazy-subtitle:after {
+content: '';
+display: block;
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+
+-webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+}
+
+
+@-webkit-keyframes underline {
+from {
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+}
+@keyframes underline {
+from {
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+}
+.alrazy-subtitle .word {
+display: inline-block;
+-webkit-animation: slide-up 1.25s cubic-bezier(0.5, 0.2, 0, 1);
+        animation: slide-up 1.25s cubic-bezier(0.5, 0.2, 0, 1);
+-webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+-webkit-animation-delay: calc( .5s + (.1s * var(--word-index)) );
+        animation-delay: calc( .5s + (.1s * var(--word-index)) );
+}
+@-webkit-keyframes slide-up {
+from {
+  -webkit-transform: translateY(125%);
+          transform: translateY(125%);
+}
+}
+@keyframes slide-up {
+from {
+  -webkit-transform: translateY(125%);
+          transform: translateY(125%);
+}
+}
+.splitting-mark {
+color: white;
 }
