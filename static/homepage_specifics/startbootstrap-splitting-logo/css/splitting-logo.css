@@ -16,6 +16,9 @@ section#tophomepage {
     overflow: hidden;
     color: black;
     text-align: center;
+    /* padding-top: 0;
+    padding-bottom:0; */
+
   }
 
 .alrazy-title:after {
