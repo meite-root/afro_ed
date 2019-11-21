@@ -4,13 +4,17 @@
 <link rel="stylesheet" href="{% static 'css/nav-var.css' %}">
 <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap" rel="stylesheet">
+
 {% endblock %}
 
 <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
   <div class="container">
-    <a class="navbar-brand" href="{% url 'home' %}">AfroEd</a>
+    <!-- Image -->
+    <a class="navbar-brand" href="{% url 'home' %}" alt="logo-image"><img src="{% static 'img\default-monochrome-white.svg' %}" width = "100"></a>
+    <!-- Text -->
+    <!-- <a class="navbar-brand" href="{% url 'home' %}">AfroEd</a> -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon" style= "background-image: url(https://img.icons8.com/windows/32/ffffff/globe-africa.png)"></span>
+      <span class="navbar-toggler-icon" style= "background-image: url(https://img.icons8.com/ios/24/ffffff/menu.png)"></span>
     </button>
 
 

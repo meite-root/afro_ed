@@ -1,18 +1,20 @@
 section#tophomepage {
   padding: 0px;
-  background: linear-gradient(to top left, #28D2BF, #177775);"
+  /* background: linear-gradient(to top left, #28D2BF, #177775);" */
+  background:white;
   }
 
 
   .alrazy-title {
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 700;
+    /* font-family: 'Quicksand', sans-serif; */
+    font-family: 'acherusgrotesque-regular';
+    /* font-weight: 700; */
     font-size: 6vw;
     font-size: calc( 100vw / var(--char-total) );
     position: relative;
     padding: 0.4em 0;
     overflow: hidden;
-    color: white;
+    color: black;
     text-align: center;
   }
 
@@ -23,7 +25,7 @@ section#tophomepage {
   bottom: 0;
   left: 0;
   right: 0;
-  border-bottom: solid 0.2em;
+  border-bottom: solid 0.06em;
   -webkit-animation: underline 1s cubic-bezier(0.8, 0, 0, 1);
           animation: underline 1s cubic-bezier(0.8, 0, 0, 1);
   -webkit-animation-fill-mode: both;
@@ -45,8 +47,8 @@ section#tophomepage {
 }
 .alrazy-title .word {
   display: inline-block;
-  -webkit-animation: slide-up 1.25s cubic-bezier(0.5, 0.2, 0, 1);
-          animation: slide-up 1.25s cubic-bezier(0.5, 0.2, 0, 1);
+  -webkit-animation: slide-up 2s cubic-bezier(0.5, 0.2, 0, 1);
+          animation: slide-up 2s cubic-bezier(0.5, 0.2, 0, 1);
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
   -webkit-animation-delay: calc( .5s + (.1s * var(--word-index)) );
@@ -73,13 +75,15 @@ section#tophomepage {
 
 .alrazy-subtitle {
   font-family: 'Quicksand', sans-serif;
-  font-weight: 700;
+  /* font-family: 'acherusgrotesque-regular'; */
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
   font-size: 6vw;
   font-size: calc( 100vw / var(--char-total) );
   position: relative;
   padding: 0.4em 0;
   overflow: hidden;
-  color: white;
+  color: #141414;
   text-align: center;
 }
 
