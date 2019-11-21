@@ -1,4 +1,4 @@
-section#tophomepage {
+section#intro {
   padding: 0px;
   /* background: linear-gradient(to top left, #28D2BF, #177775);" */
   background:white;
@@ -6,9 +6,7 @@ section#tophomepage {
 
 
   .alrazy-title {
-    /* font-family: 'Quicksand', sans-serif; */
     font-family: 'acherusgrotesque-regular';
-    /* font-weight: 700; */
     font-size: 6vw;
     font-size: calc( 100vw / var(--char-total) );
     position: relative;
@@ -16,8 +14,7 @@ section#tophomepage {
     overflow: hidden;
     color: black;
     text-align: center;
-    /* padding-top: 0;
-    padding-bottom:0; */
+
 
   }
 

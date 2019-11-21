@@ -3,18 +3,24 @@
   <head>
 
     <title>{% block title %} AfroEd {% endblock %}</title>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicons -->
+    <link href="{% static 'img\profile.png' %}" rel="icon">
+
 <!-- Change color address bar in mobile view -->
     <meta name="theme-color" content="#353A40" />
 
-<!-- Including bootstrap -->
-    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+<!-- load Fonts -->
+<link href="{% static 'Webfonts\acherusgrotesque_regular_macroman\stylesheet.css' %}" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
 
-  <!-- Additional styling -->
-        {% block stylesheet %}
-        {% endblock %}
+<!-- Including bootstrap & Additional styling -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    {% block stylesheet %}
+    {% endblock %}
+
 
   </head>
 
