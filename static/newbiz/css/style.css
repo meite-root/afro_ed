@@ -12,7 +12,8 @@
 body {
   background: #fff;
   color: #444;
-  font-family: "Open Sans", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
+  font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -39,7 +40,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: 'acherusgrotesque-regular';
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
@@ -202,7 +204,8 @@ h6 {
 
 #intro .intro-info .btn-get-started,
 #intro .intro-info .btn-services {
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: 'acherusgrotesque-regular';
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 1px;
@@ -267,7 +270,8 @@ h6 {
   padding: 10px 15px;
   transition: 0.3s;
   font-size: 14px;
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: 'acherusgrotesque-regular';
   font-weight: 500;
 }
 
@@ -456,7 +460,7 @@ h6 {
 
 .section-header h3 {
   font-size: 36px;
-  color: #283d50;
+  color: black;
   text-align: center;
   font-weight: 500;
   position: relative;
@@ -563,7 +567,7 @@ h6 {
 }
 
 #about .about-container .icon-box .title a {
-  color: #283d50;
+  color: black;
 }
 
 #about .about-container .icon-box .description {
@@ -699,7 +703,8 @@ h6 {
 }
 
 #why-us .counters span {
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: 'acherusgrotesque-regular';
   font-weight: bold;
   font-size: 48px;
   display: block;
@@ -709,7 +714,8 @@ h6 {
 #why-us .counters p {
   padding: 0;
   margin: 0 0 20px 0;
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: 'acherusgrotesque-regular';
   font-size: 14px;
   color: #cce5ff;
 }
@@ -1069,7 +1075,8 @@ h6 {
   margin: 0 0 10px 0;
   padding: 0;
   line-height: 1;
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: 'acherusgrotesque-regular';
   font-weight: 300;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -1079,7 +1086,8 @@ h6 {
 #contact .contact-about p {
   font-size: 14px;
   line-height: 24px;
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: 'acherusgrotesque-regular';
   color: #888;
 }
 
@@ -1205,7 +1213,8 @@ h6 {
   margin: 0 0 20px 0;
   padding: 2px 0 2px 0;
   line-height: 1;
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: 'acherusgrotesque-regular';
   color: #fff;
   font-weight: 400;
   letter-spacing: 3px;
@@ -1216,7 +1225,8 @@ h6 {
   font-size: 13px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: 'acherusgrotesque-regular';
   color: #ecf5ff;
 }
 
