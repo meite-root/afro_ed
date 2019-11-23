@@ -12,6 +12,7 @@
 <!-- Change color address bar in mobile view -->
     <meta name="theme-color" content="#353A40" />
 
+
 <!-- load Fonts -->
 <link href="{% static 'Webfonts\acherusgrotesque_regular_macroman\stylesheet.css' %}" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap" rel="stylesheet">
@@ -25,6 +26,17 @@
     {% endblock %}
 
 
+    <!--  !!!!!!!!!!!!!!!!!!!!
+
+    PIVOTAL FILES THAT:
+          * Change size of nav-bar
+          * Prevent mobile menu to unroll-->
+    <link href="{% static 'newbiz_homepage/css/style.css' %}" rel="stylesheet">
+    <!-- <script src="{% static 'newbiz_homepage/lib/mobile-nav/mobile-nav.js' %}"></script>
+    <script src="{% static 'newbiz_homepage/lib/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    -->
+
+
   </head>
 
   <body>
@@ -35,20 +47,20 @@
 
       <!--2. DeadCrumb -->
 
-       <div>
-       {% block deadC %}
-         <ol class="breadcrumb my-4">
-           {% block breadcrumb %}
-           {% endblock %}
-         </ol>
-       {% endblock %}
-         {% block content %}
-         {% endblock %}
-       </div>
+      <div>
+      {% block deadC %}
+        <ol class="breadcrumb my-4">
+          {% block breadcrumb %}
+          {% endblock %}
+        </ol>
+      {% endblock %}
+      </div>
 
       <!--3. Main Body -->
 
         {% block body %}
+        {% block content %}
+        {% endblock %}
         {% endblock body %}
 
       <!--4. JavaScript -->
@@ -56,8 +68,14 @@
         <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
         <script src="{% static 'js/popper.min.js' %}"></script>
         <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+
         {% block javascript %}
         {% endblock %}
+
+
+
+
 
       <!--5. Footer -->
 

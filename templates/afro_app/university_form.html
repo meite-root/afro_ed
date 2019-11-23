@@ -1,20 +1,13 @@
-{% extends "base.html" %}
+{% extends 'base_accounts.html' %}
 {% load static %}
-<!-- {% load crispy_forms_tags %} -->
 
-{% block stylesheet %}
-  <link rel="stylesheet" href="{% static 'css/accounts.css' %}">
-{% endblock %}
 
 {% block content %}
 
-<div class="container">
-
-  <h1 class="text-center logo my-4">
-    <a href="{% url 'home' %}">AfroEd</a>
-  </h1>
-
+<!-- Top Button -->
   <p><a class="btn btn-primary" href="{% url 'afro_app_university_list' %}">University Listing</a></p>
+
+<!-- Form Itself -->
 
   <form method="post">
       <div class="row justify-content-center">
@@ -24,7 +17,6 @@
               <h3 class="card-title">New University</h3>
               <form method="post" novalidate>
                 {% csrf_token %}
-                <!-- {{form|crispy}} -->
                 {% include 'includes/form.html' %}
                 <button type="submit" class="btn btn-primary btn-block">Submit</button>
               </form>
@@ -33,6 +25,11 @@
         </div>
       </div>
   </form>
-</div>
 
+  <!-- Small writing at the bottom -->
+    <div class="text-center py-2">
+      <small>
+        <a href="#" class="text-muted">AfroEd</a>
+      </small>
+    </div>
 {% endblock %}

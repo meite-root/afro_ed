@@ -3,7 +3,7 @@
 {% load static %}
 
 {% block stylesheet %}
-  <link rel="stylesheet" href="{% static 'css/app_accounts.css' %}">
+  <link rel="stylesheet" href="{% static 'css/app_afroapp.css' %}">
 {% endblock %}
 
  {% block deadC %}
@@ -11,10 +11,14 @@
 
 {% block body %}
   <div class="container">
+    <!-- Page title -->
     <h1 class="text-center logo my-4">
       <a href="{% url 'home' %}">AfroEd</a>
     </h1>
+
+    <!-- Form itself -->
     {% block content %}
     {% endblock %}
+
   </div>
 {% endblock %}

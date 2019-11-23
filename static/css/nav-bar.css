@@ -1,0 +1,7 @@
+.navbar-brand {
+    font-family: 'Josefin Sans', sans-serif;
+    /* font-family: 'Quicksand', sans-serif; font-weight:700; */
+}
+
+/* Make space for nav-bar */
+body { padding-top: 25px; }

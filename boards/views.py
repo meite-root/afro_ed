@@ -14,9 +14,9 @@ from django.urls import reverse_lazy, reverse
 
 
 def home(request):
-    return render(request, 'home.html')
-    # return render(request, 'homeclassic.html')
-    # return render(request, 'homeblog.html')
+    return render(request, 'homepage_newbiz.html')
+    # return render(request, 'homepage_classic.html')
+
 
 class BoardListView(ListView):
     model = Board
