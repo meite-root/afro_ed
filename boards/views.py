@@ -14,8 +14,11 @@ from django.urls import reverse_lazy, reverse
 
 
 def home(request):
+    return render(request, 'homepage.html')
+
+
+def homepage_template(request):
     return render(request, 'homepage_newbiz.html')
-    # return render(request, 'homepage_classic.html')
 
 
 class BoardListView(ListView):

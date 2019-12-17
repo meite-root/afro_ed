@@ -10,6 +10,7 @@ urlpatterns = [
     url('i18n/', include('django.conf.urls.i18n')), # For translation purposes
 
     url(r'^$', boards_views.home, name='home'), # Homepage
+    url('template_homepage/', boards_views.homepage_template, name='homepage_template'), # template Homepage
 
     url('forum/', boards_views.BoardListView.as_view(), name='forum'),
     url('admin/', admin.site.urls),
