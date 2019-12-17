@@ -6,7 +6,6 @@ section#intro {
 
   .alrazy-title {
     font-family: 'acherusgrotesque-regular';
-    font-size: 6vw;
     font-size: calc( 100vw / var(--char-total) );
     position: relative;
     padding: 0.4em 0;
