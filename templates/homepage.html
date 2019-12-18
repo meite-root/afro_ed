@@ -56,15 +56,18 @@
 
       <div class="intro-info" style="padding-top: 10%;">
         <h2 style="color: black; ">For the Seekers</h2>
-        <p style="font-family: 'Josefin Sans', sans-serif;">AfroEd is a platform aiming at empowering high school students seeking higher education opportunities by Providing students with up-to-date information about different colleges and universities (fields of study, application process, fees, contacts) that are accessible to them, both on the continent and worldwide.</p>
+        <p style="font-family: 'Josefin Sans', sans-serif;">AfroEd is a platform aiming at empowering high school students seeking higher education opportunities by bridging the information gap.</p>
       <div>
           <a href="#about" class="btn-get-started scrollto">Get Started</a>
-          <a href="#services" class="btn-services scrollto">Our Services</a>
+          <a href="{% url 'afro_app_university_list' %}" class="btn-services scrollto">Our programs</a>
       </div>
       </div>
 
     </div>
+
   </section>
+
+
 
   <main id="main">
     <!--==========================
@@ -73,37 +76,37 @@
     <section id="about" class="bg-light">
       <div class="container">
 
-        <!-- <header class="section-header">
-          <h3>For the Seekers</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </header> -->
+        <header class="section-header">
+          <h3>Wander no more.</h3>
+          <p>A mobile-friendly platform allowing you to navigate through a database of colleges and universities available to you.</p>
+        </header>
 
         <div class="row about-container">
 
           <div class="col-lg-6 content order-lg-1 order-2 bg-light">
           <!-- added bg-light -->
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Here, you will find up-to-date information about different colleges and universities (fields of study, application process, fees, contacts) that are accessible to you, both on the continent and worldwide.
             </p>
 
             <div class="icon-box wow fadeInUp bg-light">
             <!-- added bg-light -->
               <div class="icon"><i class="fa fa-shopping-bag"></i></div>
-              <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
+              <h4 class="title"><a href="">Look for a program.</a></h4>
               <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
             </div>
 
             <div class="icon-box wow fadeInUp bg-light" data-wow-delay="0.2s">
             <!-- added bg-light -->
               <div class="icon"><i class="fa fa-photo"></i></div>
-              <h4 class="title"><a href="">Magni Dolores</a></h4>
+              <h4 class="title"><a href="">Make sure it matches your interests.</a></h4>
               <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
             </div>
 
             <div class="icon-box wow fadeInUp bg-light" data-wow-delay="0.4s">
             <!-- added bg-light -->
               <div class="icon"><i class="fa fa-bar-chart"></i></div>
-              <h4 class="title"><a href="">Dolor Sitema</a></h4>
+              <h4 class="title"><a href="">Don't wait, apply.</a></h4>
               <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
             </div>
 
@@ -123,9 +126,13 @@
       <div class="container">
 
         <header class="section-header">
-          <h3>Wander no more.</h3>
+          <h3>Our database at a glance</h3>
           <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p>
         </header>
+
+        <!-- <div class="row">
+              {% include 'includes/caroussel.html' %}
+        </div> -->
 
         <div class="row">
 
@@ -185,67 +192,30 @@
     <section id="why-us" class="wow fadeIn">
       <div class="container">
         <header class="section-header">
-          <h3>Why choose us?</h3>
-          <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p>
+          <h3>Our database in numbers</h3>
+          <p>Thanks to our contributors all around the world who dedicate their time and energy for bridging the educational opportunity gap.</p>
         </header>
-
-        <div class="row row-eq-height justify-content-center">
-
-          <div class="col-lg-4 mb-4">
-            <div class="card wow bounceInUp">
-                <i class="fa fa-diamond"></i>
-              <div class="card-body">
-                <h5 class="card-title">Corporis dolorem</h5>
-                <p class="card-text">Deleniti optio et nisi dolorem debitis. Aliquam nobis est temporibus sunt ab inventore officiis aut voluptatibus.</p>
-                <a href="#" class="readmore">Read more </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mb-4">
-            <div class="card wow bounceInUp">
-                <i class="fa fa-language"></i>
-              <div class="card-body">
-                <h5 class="card-title">Voluptates dolores</h5>
-                <p class="card-text">Voluptates nihil et quis omnis et eaque omnis sint aut. Ducimus dolorum aspernatur.</p>
-                <a href="#" class="readmore">Read more </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mb-4">
-            <div class="card wow bounceInUp">
-                <i class="fa fa-object-group"></i>
-              <div class="card-body">
-                <h5 class="card-title">Eum ut aspernatur</h5>
-                <p class="card-text">Autem quod nesciunt eos ea aut amet laboriosam ab. Eos quis porro in non nemo ex. </p>
-                <a href="#" class="readmore">Read more </a>
-              </div>
-            </div>
-          </div>
-
-        </div>
 
         <div class="row counters">
 
           <div class="col-lg-3 col-6 text-center">
             <span data-toggle="counter-up">274</span>
-            <p>Clients</p>
+            <p>universities</p>
           </div>
 
           <div class="col-lg-3 col-6 text-center">
             <span data-toggle="counter-up">421</span>
-            <p>Projects</p>
+            <p>Scholarships</p>
           </div>
 
           <div class="col-lg-3 col-6 text-center">
             <span data-toggle="counter-up">1,364</span>
-            <p>Hours Of Support</p>
+            <p>Seekers</p>
           </div>
 
           <div class="col-lg-3 col-6 text-center">
             <span data-toggle="counter-up">18</span>
-            <p>Hard Workers</p>
+            <p>contributors</p>
           </div>
 
         </div>

@@ -28,17 +28,7 @@
     {% block stylesheet %}
     {% endblock %}
 
-
-    <!--  !!!!!!!!!!!!!!!!!!!!
-
-    PIVOTAL FILES THAT:
-          * Change size of nav-bar
-          * Prevent mobile menu to unroll-->
     <link href="{% static 'newbiz_homepage/css/style.css' %}" rel="stylesheet">
-
-    <!-- <script src="{% static 'newbiz_homepage/lib/mobile-nav/mobile-nav.js' %}"></script> -->
-    <!-- <script src="{% static 'newbiz_homepage/lib/bootstrap/js/bootstrap.bundle.min.js' %}"></script> -->
-
 
 
   </head>
@@ -48,7 +38,6 @@
       <!--1. Navigation bar -->
 
        {% include 'includes/nav-bar.html' %}
-
       <!--2. DeadCrumb -->
 
       <div>
