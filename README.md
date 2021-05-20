@@ -138,6 +138,7 @@ cd + tab
 ls -all
 ls
 open .
+getting out of VIM:  :Q
 ```       
 
 
