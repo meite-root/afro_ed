@@ -126,8 +126,20 @@ Close Shell                                # exit()
 ### Git official documentation
 
 [Documentation](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository)
+
   
-        
+### MAC TERMINAL Shell
+
+```bas
+pwd
+clear 
+cd ..
+cd + tab
+ls -all
+ls
+open .
+```       
+
 
 ### Quick commands
 
