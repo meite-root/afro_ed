@@ -168,7 +168,7 @@ git checkout -- .                       # revert all unstaged (uncommitted) chan
 
 git branch                              # checkout which branches are here and which one you are in
 git checkout -b (New-branch-name)       # Create new branch 
-git checkout (branch-name)              # swich to other branch
+git checkout (branch-name)              # swiches to other branch
 git merge (New-branch-name)             # merges to master branch
 git branch -D (branch-name)             # Deletes branch
 
